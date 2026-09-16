@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>传承的意义 · 广绣文化专题</title>
+  <meta name="description" content="从岭南生活、外贸记忆、师承体系到进校园，四块切片读懂广绣的文化传承意义。" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+  <link rel="stylesheet" href="../assets/css/heritage.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="../index.html" data-transition>
+        <span class="brand-mark">绣</span>
+        <span>广绣专题框架</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="history.html" data-transition>起源历史</a>
+        <a href="culture.html" data-transition>文化传承</a>
+        <a href="heritage.html" class="active" data-transition>传承意义</a>
+        <a href="techniques.html" data-transition>核心技艺</a>
+        <a href="cases.html" data-transition>创新案例</a>
+        <a href="works.html" data-transition>代表作品</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开导航" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="cloud-bg">
+    <!-- 页头 -->
+    <section class="page-hero heritage-hero">
+      <div class="container">
+        <span class="badge" data-reveal>非物质文化遗产 · 传承专题</span>
+        <h1 data-reveal>广绣，为什么值得传下去</h1>
+        <p class="hero-subtext" data-reveal id="heritage-intro">内容加载中…</p>
+        <div class="hero-meta" data-reveal>
+          <span id="heritage-updated">版本加载中</span>
+          <span class="dot-sep">·</span>
+          <a href="#glossary" class="meta-link">术语索引</a>
+          <span class="dot-sep">·</span>
+          <a href="#sources" class="meta-link">引用来源</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工具条：搜索 + 展开/折叠 + 编辑 -->
+    <div class="heritage-toolbar" data-heritage-toolbar>
+      <div class="container toolbar-inner">
+        <div class="search-box heritage-search">
+          <label class="sr-only" for="heritage-search-input">全文检索</label>
+          <input id="heritage-search-input" type="search" placeholder="搜索长文，如：一口通商、留水路、进校园…" autocomplete="off" />
+        </div>
+        <div class="toolbar-actions">
+          <button class="btn btn-secondary btn-sm" type="button" data-collapse-toggle aria-expanded="false">展开全部段落</button>
+          <button class="btn btn-secondary btn-sm" type="button" data-edit-toggle>
+            <span class="edit-icon" aria-hidden="true">✎</span> 编辑更新
+          </button>
+        </div>
+      </div>
+      <!-- 搜索结果浮层 -->
+      <div class="container">
+        <div class="search-panel" data-search-panel hidden>
+          <div class="search-panel-head">
+            <strong data-search-count>0 处命中</strong>
+            <button class="search-clear" type="button" data-search-clear>清除 ×</button>
+          </div>
+          <ol class="search-results" data-search-results></ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- 正文 + 目录 -->
+    <section class="section heritage-section">
+      <div class="container heritage-layout">
+        <aside class="heritage-toc" data-toc aria-label="本页目录">
+          <div class="toc-card">
+            <p class="toc-title">本页目录</p>
+            <nav>
+              <ul class="toc-list" data-toc-list>
+                <li><a href="#lingnan" data-toc-link="lingnan"><span class="toc-index">壹</span>岭南生活</a></li>
+                <li><a href="#trade" data-toc-link="trade"><span class="toc-index">贰</span>外贸记忆</a></li>
+                <li><a href="#masters" data-toc-link="masters"><span class="toc-index">叁</span>师承体系</a></li>
+                <li><a href="#campus" data-toc-link="campus"><span class="toc-index">肆</span>进校园</a></li>
+                <li class="toc-sub"><a href="#glossary" data-toc-link="glossary">术语索引</a></li>
+                <li class="toc-sub"><a href="#sources" data-toc-link="sources">引用来源</a></li>
+              </ul>
+            </nav>
+            <div class="toc-progress" aria-hidden="true">
+              <span data-read-progress></span>
+            </div>
+            <p class="toc-hint">点击条目跳转，滚动时自动高亮</p>
+          </div>
+        </aside>
+
+        <div class="heritage-content" data-heritage-content>
+          <!-- 四个版块由 JS 渲染 -->
+          <div class="heritage-skeleton" aria-hidden="true">
+            <div class="skeleton" style="height:28px;width:40%;margin-bottom:16px"></div>
+            <div class="skeleton" style="height:14px;width:90%;margin-bottom:10px"></div>
+            <div class="skeleton" style="height:14px;width:75%;margin-bottom:24px"></div>
+            <div class="skeleton" style="height:120px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 术语索引 -->
+    <section class="section pattern-bg heritage-index-section" id="glossary">
+      <div class="container">
+        <div class="section-title"><h2>术语索引</h2></div>
+        <p style="margin-bottom: var(--space-6); color: var(--color-muted);">
+          正文中<span class="term-chip">这样的词条</span>均可点击直达；按拼音排序，供快速查证。
+        </p>
+        <div class="glossary-grid" data-glossary></div>
+      </div>
+    </section>
+
+    <!-- 引用来源 -->
+    <section class="section" id="sources">
+      <div class="container">
+        <div class="section-title"><h2>引用来源</h2></div>
+        <p style="margin-bottom: var(--space-6); color: var(--color-muted);">
+          本页引文与事实依据如下，按正文上标编号排列；古籍转述均已标注性质。
+        </p>
+        <ol class="source-list" data-sources></ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- 移动端目录抽屉 -->
+  <div class="toc-drawer" data-toc-drawer hidden>
+    <div class="toc-drawer-backdrop" data-toc-close></div>
+    <div class="toc-drawer-panel" role="dialog" aria-modal="true" aria-label="本页目录">
+      <div class="toc-drawer-head">
+        <strong>本页目录</strong>
+        <button class="toc-drawer-close" type="button" data-toc-close aria-label="关闭目录">×</button>
+      </div>
+      <ul class="toc-list" data-toc-list></ul>
+      <div class="toc-progress" aria-hidden="true"><span data-read-progress></span></div>
+    </div>
+  </div>
+  <button class="toc-fab" type="button" data-toc-fab aria-label="打开目录">
+    目录<span class="toc-fab-bar"><i data-read-progress></i></span>
+  </button>
+
+  <!-- 编辑抽屉 -->
+  <div class="editor-drawer" data-editor-drawer hidden>
+    <div class="editor-backdrop" data-editor-close></div>
+    <aside class="editor-panel" role="dialog" aria-modal="true" aria-label="编辑与版本">
+      <div class="editor-head">
+        <h3>编辑更新</h3>
+        <button class="toc-drawer-close" type="button" data-editor-close aria-label="关闭">×</button>
+      </div>
+      <p class="editor-tip">正文段落、引文与要点均可直接修改。保存即生成新版本，历史版本可预览与回滚，形成完整版本链。</p>
+      <div class="editor-field">
+        <label for="edit-note">本次更新说明</label>
+        <input id="edit-note" class="input" type="text" placeholder="如：补充分校案例、修订引述" maxlength="60" />
+      </div>
+      <div class="editor-field">
+        <label for="edit-author">署名</label>
+        <input id="edit-author" class="input" type="text" placeholder="选填，默认：访客编辑" maxlength="20" />
+      </div>
+      <div class="editor-actions">
+        <button class="btn btn-primary btn-sm" type="button" data-save-version>保存为新版本</button>
+        <button class="btn btn-secondary btn-sm" type="button" data-exit-edit>退出编辑</button>
+      </div>
+      <div class="version-chain-head">
+        <strong>版本链</strong>
+        <button class="link-btn" type="button" data-reset-versions>恢复初始版本</button>
+      </div>
+      <ol class="version-chain" data-version-chain></ol>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>广绣文化</h4>
+        <p>中国四大名绣之一，2006年入选首批国家级非物质文化遗产名录。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <p><a href="history.html">历史发展</a> · <a href="techniques.html">核心技艺</a> · <a href="works.html">代表作品</a> · <a href="heritage.html">传承意义</a></p>
+      </div>
+      <div>
+        <h4>本页说明</h4>
+        <p id="heritage-version-note">内容版本记录见“编辑更新”面板，本地保存版本链。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/heritage.js"></script>
+</body>
+</html>

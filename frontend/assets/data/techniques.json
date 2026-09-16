@@ -1,0 +1,129 @@
+{
+  "categories": [
+    {
+      "name": "基础针法",
+      "description": "广绣最基本的针法，是其他复杂针法的基础",
+      "items": [
+        {
+          "title": "直针",
+          "description": "最基本的针法，针脚整齐排列，用于勾勒轮廓和填充平直区域",
+          "usage": "适用于线条、边框和平面填充",
+          "characteristics": ["整齐", "平直", "规整"]
+        },
+        {
+          "title": "套针",
+          "description": "长短针交替套叠，形成自然渐变效果，是广绣最具特色的针法之一",
+          "usage": "用于表现色彩过渡、鸟羽丝理等细腻效果",
+          "characteristics": ["渐变", "柔和", "自然"]
+        },
+        {
+          "title": "齐针",
+          "description": "针脚长度相等，排列整齐，形成平整均匀的绣面",
+          "usage": "适用于大面积平整填色",
+          "characteristics": ["平整", "均匀", "细腻"]
+        },
+        {
+          "title": "插针",
+          "description": "长短针交错穿插，针脚密实，是广绣核心技艺",
+          "usage": "用于表现层次感强的图案",
+          "characteristics": ["交错", "密实", "层次"]
+        }
+      ]
+    },
+    {
+      "name": "象形针法",
+      "description": "模拟物象形态的专用针法，形象生动",
+      "items": [
+        {
+          "title": "鸡毛针",
+          "description": "模拟羽毛纹理，用于绣制鸟类羽毛",
+          "usage": "鸟羽、绒毛等细腻质感",
+          "characteristics": ["细腻", "仿真", "柔软"]
+        },
+        {
+          "title": "花瓣针",
+          "description": "模拟花瓣层次和纹理，表现花卉的立体感",
+          "usage": "各类花卉刺绣",
+          "characteristics": ["立体", "柔美", "自然"]
+        },
+        {
+          "title": "云针",
+          "description": "表现云朵的蓬松感和流动感",
+          "usage": "山水、云雾图案",
+          "characteristics": ["飘逸", "轻盈", "流动"]
+        },
+        {
+          "title": "水纹针",
+          "description": "表现水波荡漾的纹理效果",
+          "usage": "江河湖海等水景",
+          "characteristics": ["流畅", "动感", "韵律"]
+        }
+      ]
+    },
+    {
+      "name": "金银线绣",
+      "description": "使用金银线进行刺绣，华丽富贵，又称钉金绣",
+      "items": [
+        {
+          "title": "钉金绣",
+          "description": "以金银线缀于绣面，形成光泽与层次丰富的纹样结构",
+          "usage": "戏服、礼服、宗教用品",
+          "characteristics": ["华丽", "光泽", "富贵"]
+        },
+        {
+          "title": "垫高绣",
+          "description": "通过填充与压线形成浮雕感，富有立体感",
+          "usage": "龙凤、花鸟等需要立体效果的图案",
+          "characteristics": ["浮雕", "立体", "厚重"]
+        },
+        {
+          "title": "平金绣",
+          "description": "金线平铺缀以细密针脚，强调线条的流动与光影对比",
+          "usage": "图案轮廓、装饰线条",
+          "characteristics": ["流畅", "光泽", "精细"]
+        },
+        {
+          "title": "盘金绣",
+          "description": "金线盘绕成图案，用细线固定，形成金碧辉煌的效果",
+          "usage": "龙袍、戏服、宗教绣品",
+          "characteristics": ["金碧", "华贵", "庄重"]
+        }
+      ]
+    },
+    {
+      "name": "特色技法",
+      "description": "广绣独创的特殊技法，体现地域特色",
+      "items": [
+        {
+          "title": "留水路",
+          "description": "在相邻绣面间留0.5毫米空白线条，使图案层次分明，和谐统一",
+          "usage": "各类精细绣品",
+          "characteristics": ["层次", "清晰", "独特"]
+        },
+        {
+          "title": "打籽绣",
+          "description": "将线绕成小颗粒状固定，形成颗粒质感",
+          "usage": "花蕊、装饰点等",
+          "characteristics": ["颗粒", "立体", "装饰"]
+        },
+        {
+          "title": "网绣",
+          "description": "用线编织成网状纹理，通透雅致",
+          "usage": "花边、薄纱效果",
+          "characteristics": ["通透", "雅致", "轻盈"]
+        },
+        {
+          "title": "双面绣",
+          "description": "正反两面图案相同，针脚隐藏，技艺精湛",
+          "usage": "屏风、摆件、礼品",
+          "characteristics": ["双面", "精细", "珍贵"]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "totalStitches": "40+",
+    "mainCategories": 4,
+    "heritageLevel": "国家级非物质文化遗产"
+  }
+}

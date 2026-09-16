@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>核心技艺 · 广绣专题</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="../index.html" data-transition>
+        <span class="brand-mark">绣</span>
+        <span>广绣专题框架</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="history.html" data-transition>起源历史</a>
+        <a href="culture.html" data-transition>文化传承</a>
+        <a href="techniques.html" data-transition>核心技艺</a>
+        <a href="cases.html" data-transition>创新案例</a>
+        <a href="analysis.html" data-transition>技艺分析</a>
+        <a href="works.html" data-transition>代表作品</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="cloud-bg">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <span>首页</span>
+          <span>/</span>
+          <span>核心技艺</span>
+        </div>
+        <h1>核心技艺结构类型</h1>
+        <p>围绕针法、构图与材料建立可复用的技艺展示结构。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="content-panel" data-reveal style="display: flex; flex-direction: column; gap: var(--space-5);">
+          <div>
+            <h2>技艺分类标签</h2>
+            <div class="tag-list">
+              <span class="tag">金线体系</span>
+              <span class="tag">立体塑形</span>
+              <span class="tag">细密平针</span>
+              <span class="tag">双面绣</span>
+              <span class="tag">套色过渡</span>
+            </div>
+            <p>使用标签体系为后续内容检索与筛选提供标准。</p>
+          </div>
+          
+          <div style="border-top: 1px solid var(--color-line); padding-top: var(--space-5);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-4);">广绣工艺特征</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+              <div style="text-align: center; padding: var(--space-4); background: rgba(138, 45, 45, 0.04); border-radius: var(--radius-sm);">
+                <div style="font-size: 2rem; margin-bottom: var(--space-2);">🎨</div>
+                <h4 style="margin-bottom: var(--space-1);">构图饱满</h4>
+                <p style="font-size: 0.85rem; margin: 0;">画面繁密热闹，少留白</p>
+              </div>
+              <div style="text-align: center; padding: var(--space-4); background: rgba(138, 45, 45, 0.04); border-radius: var(--radius-sm);">
+                <div style="font-size: 2rem; margin-bottom: var(--space-2);">🌈</div>
+                <h4 style="margin-bottom: var(--space-1);">色彩艳丽</h4>
+                <p style="font-size: 0.85rem; margin: 0;">用色明快，对比强烈</p>
+              </div>
+              <div style="text-align: center; padding: var(--space-4); background: rgba(138, 45, 45, 0.04); border-radius: var(--radius-sm);">
+                <div style="font-size: 2rem; margin-bottom: var(--space-2);">🪡</div>
+                <h4 style="margin-bottom: var(--space-1);">针法多变</h4>
+                <p style="font-size: 0.85rem; margin: 0;">40余种针法灵活运用</p>
+              </div>
+              <div style="text-align: center; padding: var(--space-4); background: rgba(138, 45, 45, 0.04); border-radius: var(--radius-sm);">
+                <div style="font-size: 2rem; margin-bottom: var(--space-2);">🌏</div>
+                <h4 style="margin-bottom: var(--space-1);">中西融合</h4>
+                <p style="font-size: 0.85rem; margin: 0;">融入西洋光影技法</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-panel stitch-3d-showcase" data-reveal>
+          <div class="cloud-corner-tl"></div>
+          <div class="cloud-corner-br"></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+            <h2 style="color: #8a2d2d; margin: 0;">针法 3D 构造解析</h2>
+            <span class="seal-tag">立体可视化</span>
+          </div>
+          
+          <div class="stitch-3d-container" data-tilt-3d>
+            <div class="stitch-3d auto-rotate" id="stitch3DModel">
+              <!-- 发光效果层 -->
+              <div class="silk-glow"></div>
+              
+              <!-- 针：贯穿各层 -->
+              <div class="needle">
+                <div class="needle-eye"></div>
+              </div>
+              
+              <!-- 丝线层：丝绸光泽 -->
+              <div class="layer layer-silk">
+                <div class="silk-texture"></div>
+                <div class="thread-path">
+                  <div class="thread-stitch"></div>
+                  <div class="thread-stitch"></div>
+                  <div class="thread-stitch"></div>
+                  <div class="thread-stitch"></div>
+                  <div class="thread-stitch"></div>
+                </div>
+                <div class="layer-label">丝线绣迹层</div>
+              </div>
+              
+              <!-- 绣布层 -->
+              <div class="layer layer-fabric">
+                <div class="fabric-texture"></div>
+                <div class="layer-label">绣布经纬层</div>
+              </div>
+              
+              <!-- 垫衬层 -->
+              <div class="layer layer-padding">
+                <div class="padding-texture"></div>
+                <div class="layer-label">垫衬支撑层</div>
+              </div>
+              
+              <!-- 底层支撑 -->
+              <div class="layer layer-base">
+                <div class="base-texture"></div>
+                <div class="layer-label">底层支撑</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 控制面板 -->
+          <div class="visualization-controls">
+            <button class="control-btn" id="rotateToggle" title="自动旋转">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 11-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+                <path d="M21 3v5h-5"/>
+              </svg>
+              <span>自动旋转</span>
+            </button>
+            <button class="control-btn" id="resetView" title="重置视角">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 101.9-5.5"/>
+                <path d="M3 5v7h7"/>
+              </svg>
+              <span>重置视角</span>
+            </button>
+            <button class="control-btn" id="layerToggle" title="分层显示">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+              <span>分层显示</span>
+            </button>
+          </div>
+          
+          <!-- 视角指示器 -->
+          <div class="view-indicator">
+            <span>X: <span id="rotX">0</span>°</span>
+            <span>Y: <span id="rotY">0</span>°</span>
+          </div>
+          
+          <p style="text-align: center; margin-top: var(--space-4); color: rgba(138, 45, 45, 0.6);">
+            <small>🖱️ 拖动旋转 · 滚轮缩放 · 悬停暂停</small>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section thunder-pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>针法交互式演示</h2>
+        </div>
+        <div class="grid grid-2" data-reveal>
+          <div class="stitch-canvas-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="seal-tag">动态演示</span>
+              <span style="font-size: 0.8rem; color: rgba(138, 45, 45, 0.5);">Canvas 实时渲染</span>
+            </div>
+            <div class="canvas-showcase">
+              <canvas id="stitchCanvas" width="400" height="240"></canvas>
+            </div>
+            <div class="canvas-progress-container">
+              <div class="canvas-progress-bar">
+                <div class="canvas-progress-fill" id="stitchProgress" style="width: 14%;"></div>
+              </div>
+              <span class="progress-text">步骤 <span id="currentStep">1</span> / 7</span>
+            </div>
+            <p style="margin-top: var(--space-4); color: rgba(111, 98, 91, 0.8);">通过 Canvas 模拟丝线走势，展示广绣核心针法逻辑。</p>
+          </div>
+          <div class="stitch-stepper-panel" data-stepper>
+            <span class="seal-tag" style="margin-bottom: 12px;">操作步骤</span>
+            <h3 data-step-title>起针</h3>
+            <p data-step-desc>确定纹样起始点，固定丝线张力，为绣制打下基础。</p>
+            <div class="stepper-controls" style="margin-top: var(--space-5);">
+              <button class="control-btn" data-step-prev>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"/>
+                </svg>
+                <span>上一步</span>
+              </button>
+              <button class="control-btn active" data-step-next>
+                <span>下一步</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </button>
+            </div>
+            <div style="margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid rgba(138, 45, 45, 0.1);">
+              <button class="control-btn" style="width: 100%; justify-content: center;" id="autoPlayBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+                <span>自动播放演示</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>针法体系分类</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          广绣拥有基础针法、象形针法、金银线绣、特色技法四大类共40余种针法
+        </p>
+        
+        <!-- 基础针法 -->
+        <div class="content-panel" style="margin-bottom: var(--space-6);">
+          <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+            <span class="seal-tag">基础针法</span>
+            <span style="color: var(--color-muted); font-size: 0.9rem;">广绣最基本的针法，是其他复杂针法的基础</span>
+          </div>
+          <div class="grid grid-4" data-reveal>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">直针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">最基本的针法，针脚整齐排列，用于勾勒轮廓和填充平直区域</p>
+              <div class="tag-list">
+                <span class="tag">整齐</span>
+                <span class="tag">平直</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">套针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">长短针交替套叠，形成自然渐变效果，是广绣最具特色的针法</p>
+              <div class="tag-list">
+                <span class="tag">渐变</span>
+                <span class="tag">柔和</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">齐针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">针脚长度相等，排列整齐，形成平整均匀的绣面</p>
+              <div class="tag-list">
+                <span class="tag">平整</span>
+                <span class="tag">均匀</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">插针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">长短针交错穿插，针脚密实，是广绣核心技艺</p>
+              <div class="tag-list">
+                <span class="tag">交错</span>
+                <span class="tag">密实</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 象形针法 -->
+        <div class="content-panel" style="margin-bottom: var(--space-6);">
+          <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+            <span class="seal-tag">象形针法</span>
+            <span style="color: var(--color-muted); font-size: 0.9rem;">模拟物象形态的专用针法，形象生动</span>
+          </div>
+          <div class="grid grid-4" data-reveal>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">鸡毛针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">模拟羽毛纹理，用于绣制鸟类羽毛，细腻仿真</p>
+              <div class="tag-list">
+                <span class="tag">羽毛</span>
+                <span class="tag">仿真</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">花瓣针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">模拟花瓣层次和纹理，表现花卉的立体感</p>
+              <div class="tag-list">
+                <span class="tag">立体</span>
+                <span class="tag">柔美</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">云针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">表现云朵的蓬松感和流动感，轻盈飘逸</p>
+              <div class="tag-list">
+                <span class="tag">飘逸</span>
+                <span class="tag">轻盈</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">水纹针</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">表现水波荡漾的纹理效果，流畅动感</p>
+              <div class="tag-list">
+                <span class="tag">流畅</span>
+                <span class="tag">韵律</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 金银线绣 -->
+        <div class="content-panel" style="margin-bottom: var(--space-6);">
+          <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+            <span class="seal-tag">金银线绣</span>
+            <span style="color: var(--color-muted); font-size: 0.9rem;">使用金银线进行刺绣，华丽富贵，又称钉金绣</span>
+          </div>
+          <div class="grid grid-4" data-reveal>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">钉金绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">以金银线缀于绣面，形成光泽与层次丰富的纹样结构</p>
+              <div class="tag-list">
+                <span class="tag">华丽</span>
+                <span class="tag">光泽</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">垫高绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">通过填充与压线形成浮雕感，富有立体感</p>
+              <div class="tag-list">
+                <span class="tag">浮雕</span>
+                <span class="tag">立体</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">平金绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">金线平铺缀以细密针脚，强调线条的流动与光影对比</p>
+              <div class="tag-list">
+                <span class="tag">流畅</span>
+                <span class="tag">光泽</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">盘金绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">金线盘绕成图案，用细线固定，形成金碧辉煌的效果</p>
+              <div class="tag-list">
+                <span class="tag">金碧</span>
+                <span class="tag">华贵</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 特色技法 -->
+        <div class="content-panel">
+          <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+            <span class="seal-tag">特色技法</span>
+            <span style="color: var(--color-muted); font-size: 0.9rem;">广绣独创的特殊技法，体现地域特色</span>
+          </div>
+          <div class="grid grid-4" data-reveal>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">留水路</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">在相邻绣面间留0.5毫米空白线条，使图案层次分明</p>
+              <div class="tag-list">
+                <span class="tag">独特</span>
+                <span class="tag">层次</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">打籽绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">将线绕成小颗粒状固定，形成颗粒质感</p>
+              <div class="tag-list">
+                <span class="tag">颗粒</span>
+                <span class="tag">立体</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">网绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">用线编织成网状纹理，通透雅致</p>
+              <div class="tag-list">
+                <span class="tag">通透</span>
+                <span class="tag">轻盈</span>
+              </div>
+            </div>
+            <div class="card traditional-border">
+              <h4 style="color: var(--color-primary); margin-bottom: var(--space-2);">双面绣</h4>
+              <p style="font-size: 0.9rem; margin-bottom: var(--space-3);">正反两面图案相同，针脚隐藏，技艺精湛</p>
+              <div class="tag-list">
+                <span class="tag">双面</span>
+                <span class="tag">珍贵</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>广绣技艺精髓</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          千年传承的匠心技艺，展现岭南文化的独特魅力
+        </p>
+        <div class="grid grid-3" data-reveal>
+          <div class="card traditional-border">
+            <h4 style="color: var(--color-primary);">绣工精细</h4>
+            <p>广绣以绣工精细、针法丰富著称，每一针都凝聚匠人心血。</p>
+          </div>
+          <div class="card traditional-border">
+            <h4 style="color: var(--color-primary);">图案繁茂</h4>
+            <p>构图饱满繁密，少有空隙，呈现热闹喜庆的视觉效果。</p>
+          </div>
+          <div class="card traditional-border">
+            <h4 style="color: var(--color-primary);">色彩富丽</h4>
+            <p>用色明快艳丽，对比强烈，体现岭南文化的热烈奔放。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>技艺结构</h4>
+        <p>推荐在此补充针法图谱与材料清单。</p>
+      </div>
+      <div>
+        <h4>交互演示</h4>
+        <p>分步演示可接入真实视频或逐帧图像。</p>
+      </div>
+      <div>
+        <h4>内容接口</h4>
+        <p>通过 JSON 数据扩展更多技艺项。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

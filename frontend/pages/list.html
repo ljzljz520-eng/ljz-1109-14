@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>列表模板 · 广绣专题</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="../index.html" data-transition>
+        <span class="brand-mark">绣</span>
+        <span>广绣专题框架</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="history.html" data-transition>起源历史</a>
+        <a href="culture.html" data-transition>文化传承</a>
+        <a href="techniques.html" data-transition>核心技艺</a>
+        <a href="cases.html" data-transition>创新案例</a>
+        <a href="analysis.html" data-transition>技艺分析</a>
+        <a href="works.html" data-transition>代表作品</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <span>首页</span>
+          <span>/</span>
+          <span>列表模板</span>
+        </div>
+        <h1>列表页模板</h1>
+        <p>用于展示纹样、人物、工坊或作品集合的统一列表结构。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-panel" data-reveal>
+        <div class="grid grid-2" style="align-items: center; margin-bottom: var(--space-6);">
+          <h2 style="margin: 0;">分类浏览</h2>
+          <div class="search-box">
+            <input type="text" placeholder="搜索纹样、作品、技艺..." data-search-input />
+          </div>
+        </div>
+        <div class="filter-group" style="margin-bottom: var(--space-5);">
+          <label>
+            <input type="checkbox" class="filter-checkbox" value="金线" data-filter />
+            <span class="filter-label">金线绣</span>
+          </label>
+          <label>
+            <input type="checkbox" class="filter-checkbox" value="立体" data-filter />
+            <span class="filter-label">立体绣</span>
+          </label>
+          <label>
+            <input type="checkbox" class="filter-checkbox" value="传统" data-filter />
+            <span class="filter-label">传统题材</span>
+          </label>
+          <label>
+            <input type="checkbox" class="filter-checkbox" value="现代" data-filter />
+            <span class="filter-label">现代应用</span>
+          </label>
+        </div>
+        <div class="tabs" data-tabs>
+          <button class="tab-button is-active" data-tab="classic">传统题材</button>
+          <button class="tab-button" data-tab="modern">现代应用</button>
+        </div>
+        <div class="view-panel is-active" data-tab-panel="classic">
+          <div class="grid grid-3" data-list data-reveal>
+            <div class="card">
+              <div class="skeleton" data-skeleton></div>
+              <div class="skeleton" data-skeleton style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="view-panel" data-tab-panel="modern">
+          <div class="grid grid-2">
+            <article class="card">
+              <h3 class="card-title">文创衍生</h3>
+              <p>适用于文创产品、服饰与礼品系列的整理展示。</p>
+            </article>
+            <article class="card">
+              <h3 class="card-title">公共艺术</h3>
+              <p>记录装置艺术与城市公共空间中的广绣元素应用。</p>
+            </article>
+          </div>
+        </div>
+        <div class="pagination" style="margin-top: var(--space-6);">
+          <span class="current">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">下一页</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>列表结构</h4>
+        <p>可接入筛选、搜索与排序组件。</p>
+      </div>
+      <div>
+        <h4>数据扩展</h4>
+        <p>统一使用 JSON 驱动卡片渲染。</p>
+      </div>
+      <div>
+        <h4>适用范围</h4>
+        <p>人物、机构、纹样与作品均可复用。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

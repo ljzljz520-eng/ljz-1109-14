@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>详情模板 · 广绣专题</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="../index.html" data-transition>
+        <span class="brand-mark">绣</span>
+        <span>广绣专题框架</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="history.html" data-transition>起源历史</a>
+        <a href="culture.html" data-transition>文化传承</a>
+        <a href="techniques.html" data-transition>核心技艺</a>
+        <a href="cases.html" data-transition>创新案例</a>
+        <a href="analysis.html" data-transition>技艺分析</a>
+        <a href="works.html" data-transition>代表作品</a>
+      </nav>
+      <button class="nav-toggle" aria-label="打开导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <span>首页</span>
+          <span>/</span>
+          <span>详情模板</span>
+        </div>
+        <h1>作品 / 技艺详情页模板</h1>
+        <p>用于展示单一作品或针法的完整信息结构。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="content-panel" data-reveal>
+          <h2>基础信息</h2>
+          <p>可包含作者、年代、材质、针法与故事背景等字段。</p>
+          <div class="kpi">
+            <strong>2024</strong>
+            <span>最新修复版本</span>
+          </div>
+        </div>
+        <div class="content-panel" data-reveal>
+          <h2>视觉素材</h2>
+          <img src="../assets/img/placeholder.svg" alt="详情页图像占位" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern-bg">
+      <div class="container content-panel" data-reveal>
+        <h2>内容模块切换</h2>
+        <div class="tabs" data-tabs>
+          <button class="tab-button is-active" data-tab="story">工艺故事</button>
+          <button class="tab-button" data-tab="process">针法流程</button>
+          <button class="tab-button" data-tab="materials">材料结构</button>
+        </div>
+        <div class="view-panel is-active" data-tab-panel="story">
+          <p>描述作品背后的文化故事与地域语境。</p>
+        </div>
+        <div class="view-panel" data-tab-panel="process">
+          <p>说明针法结构、工序流程与关键工艺。</p>
+        </div>
+        <div class="view-panel" data-tab-panel="materials">
+          <p>记录丝线、底布、色彩与纹样设计要点。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>详情结构</h4>
+        <p>保持模块化布局，支持多段落图文。</p>
+      </div>
+      <div>
+        <h4>内容扩展</h4>
+        <p>可加入视频、音频与交互注释。</p>
+      </div>
+      <div>
+        <h4>跨页联动</h4>
+        <p>与列表页、案例页形成索引关系。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

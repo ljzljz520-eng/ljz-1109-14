@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>广绣文化专题 · 技术框架示范</title>
+  <link rel="preload" href="assets/img/hero-embroidery.svg" as="image" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-transition>
+        <span class="brand-mark">绣</span>
+        <span>广绣专题框架</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="pages/history.html" data-transition>起源历史</a>
+        <a href="pages/culture.html" data-transition>文化传承</a>
+        <a href="pages/techniques.html" data-transition>核心技艺</a>
+        <a href="pages/cases.html" data-transition>创新案例</a>
+        <a href="pages/analysis.html" data-transition>技艺分析</a>
+        <a href="pages/works.html" data-transition>代表作品</a>
+        <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" data-animation-control>暂停全局动画</button>
+      </nav>
+      <button class="nav-toggle" aria-label="打开导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="cloud-bg">
+    <section class="hero container">
+      <div class="hero-card" data-reveal>
+        <span class="badge">非遗文化 · 现代叙事</span>
+        <h1>中国广绣专题介绍网站技术框架</h1>
+        <p class="hero-subtext">
+          基于原生 HTML、CSS 与 JavaScript 构建的多页面展示体系，覆盖起源历史、文化传承、核心技艺、创新案例与代表作品。
+        </p>
+        <div style="display:flex; gap: 12px; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="pages/history.html" data-transition>进入历史脉络</a>
+          <a class="btn btn-secondary" href="pages/design-system.html" data-transition>查看设计规范</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <div class="hero-carousel" data-hero-carousel>
+          <div class="carousel-track">
+            <img src="assets/img/广锈01.webp" alt="广绣作品01" class="carousel-item active" />
+            <img src="assets/img/广锈02.webp" alt="广绣作品02" class="carousel-item" />
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>广绣概览</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          广绣是中国四大名绣之一，起源于唐代，2006年入选首批国家级非物质文化遗产名录
+        </p>
+        <div class="grid grid-4" data-reveal>
+          <div class="content-panel" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: var(--space-2);">1200+</div>
+            <p style="font-weight: 600;">年历史传承</p>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">从唐代卢眉娘到现代</p>
+          </div>
+          <div class="content-panel" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: var(--space-2);">40+</div>
+            <p style="font-weight: 600;">种传统针法</p>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">基础、象形、金银线绣</p>
+          </div>
+          <div class="content-panel" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: var(--space-2);">2006</div>
+            <p style="font-weight: 600;">年入选非遗</p>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">首批国家级非遗名录</p>
+          </div>
+          <div class="content-panel" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: var(--space-2);">5+</div>
+            <p style="font-weight: 600;">位传承人</p>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">国家级、省级传承人</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ruyi-pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>核心技艺</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          广绣拥有基础针法、象形针法、金银线绣、特色技法四大类共40余种针法
+        </p>
+        <div class="grid grid-4" data-reveal>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">基础</span>
+            <h3 class="card-title">直针</h3>
+            <p style="font-size: 0.9rem;">最基本的针法，针脚整齐排列，用于勾勒轮廓和填充平直区域。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">特色</span>
+            <h3 class="card-title">套针</h3>
+            <p style="font-size: 0.9rem;">长短针交替套叠，形成自然渐变效果，是广绣最具特色的针法。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">金银</span>
+            <h3 class="card-title">钉金绣</h3>
+            <p style="font-size: 0.9rem;">以金银线缀于绣面，形成光泽与层次丰富的纹样结构。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">独创</span>
+            <h3 class="card-title">留水路</h3>
+            <p style="font-size: 0.9rem;">在相邻绣面间留0.5毫米空白线条，使图案层次分明。</p>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-5);">
+          <a class="btn btn-primary" href="pages/techniques.html" data-transition>查看全部针法</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>历史发展脉络</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          从唐代卢眉娘到现代传承人，跨越千年的广绣发展历程
+        </p>
+        <div class="timeline" data-reveal style="max-width: 800px; margin: 0 auto;">
+          <div class="timeline-item">
+            <h3>唐代 · 技艺雏形</h3>
+            <p>卢眉娘能于尺绢绣《法华经》七卷，被奉为广绣始祖。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>明代 · 扬名海外</h3>
+            <p>1514年葡萄牙商人将广绣带入欧洲，成为"中国给西方的礼物"。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>清代 · 鼎盛时期</h3>
+            <p>1757年"一口通商"，广州状元坊成为名扬海内外的"刺绣一条街"。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>现代 · 传承创新</h3>
+            <p>2006年入选首批国家级非遗，广绣与时尚、文创结合焕发新生。</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-5);">
+          <a class="btn btn-primary" href="pages/history.html" data-transition>查看完整历史</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wan-pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>传统与现代创新应用</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          数字化展示、时尚跨界、文创开发、教育普及等多元创新路径
+        </p>
+        <div class="grid grid-3" data-reveal>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">数字化</span>
+            <h3 class="card-title">广绣数字展陈</h3>
+            <p style="font-size: 0.9rem;">通过3D投影、AR技术展示针法细节，让观众虚拟体验刺绣过程。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">时尚</span>
+            <h3 class="card-title">品牌跨界合作</h3>
+            <p style="font-size: 0.9rem;">与国际时装品牌合作，将广绣融入现代服装设计，参加巴黎时装周。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="margin-bottom: 8px; font-size: 0.7rem;">文创</span>
+            <h3 class="card-title">文创产品开发</h3>
+            <p style="font-size: 0.9rem;">推出广绣包包、丝巾、首饰等日用品，让非遗走进现代生活。</p>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-5);">
+          <a class="btn btn-primary" href="pages/cases.html" data-transition>查看更多案例</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>代表作品</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: var(--space-6); color: var(--color-muted);">
+          从故宫博物院藏《百鸟争鸣图》到现代《荔枝红》，经典作品赏析
+        </p>
+        <div class="grid grid-3" data-reveal>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="position: absolute; top: -10px; right: 10px; font-size: 0.7rem;">故宫藏品</span>
+            <h3 class="card-title" style="margin-top: var(--space-3);">《百鸟争鸣图》</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">清代 · 故宫博物院</p>
+            <p style="font-size: 0.9rem; margin-top: var(--space-2);">采用十余种针法绣制百鸟、花卉，色彩华丽，构图繁密。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="position: absolute; top: -10px; right: 10px; font-size: 0.7rem;">现代创新</span>
+            <h3 class="card-title" style="margin-top: var(--space-3);">《荔枝红》</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">1986年 · 陈少芳</p>
+            <p style="font-size: 0.9rem; margin-top: var(--space-2);">以岭南荔枝为主题，现代广绣的代表作品。</p>
+          </article>
+          <article class="card traditional-border">
+            <span class="seal-tag" style="position: absolute; top: -10px; right: 10px; font-size: 0.7rem;">外销精品</span>
+            <h3 class="card-title" style="margin-top: var(--space-3);">《孔雀图》</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">19世纪 · 十三行博物馆</p>
+            <p style="font-size: 0.9rem; margin-top: var(--space-2);">融合中西风格的外销广绣精品，海上丝绸之路见证。</p>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-5);">
+          <a class="btn btn-primary" href="pages/works.html" data-transition>进入作品库</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section thunder-pattern-bg">
+      <div class="container grid grid-2">
+        <div class="content-panel traditional-border" data-reveal>
+          <h2>传承人与场馆</h2>
+          <p>了解陈少芳、许炽光等国家级传承人，以及广州十三行博物馆、聚元祥文化馆等传承场所。</p>
+          <a class="btn btn-secondary" href="pages/culture.html" data-transition>了解传承</a>
+        </div>
+        <div class="content-panel traditional-border" data-reveal>
+          <h2>参观指南</h2>
+          <p>广州十三行博物馆、广东省丝绸博物馆、聚元祥广绣文化馆等场馆参观信息。</p>
+          <a class="btn btn-secondary" href="pages/culture.html" data-transition>查看指南</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>广绣文化</h4>
+        <p>中国四大名绣之一，2006年入选首批国家级非物质文化遗产名录。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <p><a href="pages/history.html">历史发展</a> · <a href="pages/techniques.html">核心技艺</a> · <a href="pages/works.html">代表作品</a> · <a href="pages/culture.html">文化传承</a></p>
+      </div>
+      <div>
+        <h4>互动体验</h4>
+        <p>3D针法展示 · 交互式演示 · 数字化展陈</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
